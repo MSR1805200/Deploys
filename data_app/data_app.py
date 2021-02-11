@@ -11,7 +11,7 @@ with open('model.pickle', 'rb') as file:
 
 @st.cache
 def get_data():
-    url = 'https://raw.githubusercontent.com/MSR1805200/Portifolio/main/aprendizado_maquina_ufsc/projeto_final/data/apoio.xls'
+    url = 'apoio.xls'
     return pd.read_excel(url)
 
 def plot_freq(title,x,y,color,data):
